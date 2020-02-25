@@ -1,0 +1,22 @@
+
+squares = []
+for value in range(1,11):
+	square = value**2
+	squares.append(square)
+print(squares)
+
+
+digits = list(range(0,10))
+print(digits)
+digit1 = digits.append(digits.pop(0))
+print(digit1)
+print(digits)
+
+print(min(digits))
+print(max(digits))
+print(sum(digits))
+
+
+squares = [value**2 for value in range(1,11)]
+print(str(squares)+'\n')
+
