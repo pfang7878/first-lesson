@@ -32,3 +32,7 @@ else:
 
 alien_0['x_position'] = alien_0['x_position'] + x_increment
 print('New x_position: ' + str(alien_0['x_position']))
+
+
+del alien_0['speed']
+print(alien_0)
