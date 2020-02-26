@@ -28,3 +28,23 @@ for name in favorite_languages:
 		print(' Hi ' + name.title() +
 			',I see your favorite language is ' +
 			favorite_languages[name].title())
+
+
+print('The following languages have been montioned: ')
+for language in favorite_languages.values():
+	print(language.title())
+
+#无重复
+
+print('The following languages have been montioned: ')
+for language in set(favorite_languages.values()):
+	print(language.title())
+
+people = ['jen','phil','yichen','alex','Andy','khoo']
+
+
+for name in people:
+	if name in favorite_languages.keys():
+		print(name + ',Thanks for help!')
+	else:
+		print(name + ',Please help to poll, thanks!')

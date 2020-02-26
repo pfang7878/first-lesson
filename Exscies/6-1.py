@@ -26,5 +26,23 @@ print('Tulpe: ' + words['tulpe'])
 print('for: ' + words['for'])
 print('if: ' + words['if'])
 
+words['dict'] = 'a kind of var'
+words['ssh'] = 'remove access'
+words['git'] = 'manage version'
+words['git add'] = 'put change to stage'
+words['git commit'] = 'put change to versions'
+
+
 for key,value in words.items():
-	print(key +': ' + value)
+	print(key + ': ' + value)
+
+rivers = {'nile':'egypt','changjiang':'shanghai','huanghe':'zhujiang'}
+
+for name,city in rivers.items():
+	print('\nThe ' + name.title() + ' runs through ' + city.title())
+
+for name in rivers.keys():
+	print(name)
+for city in rivers.values():
+	print(city)
+
